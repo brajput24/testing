@@ -33,7 +33,7 @@ import org.testng.annotations.Test;
 		        
 			 } else if(browser.equalsIgnoreCase("chrome")){
 			 */
-		      System.setProperty("webdriver.chrome.driver","Drivers//chromedriver.exe");
+		      System.setProperty("webdriver.chrome.driver","/root/chromedriver");
 			    driver = new ChromeDriver();
 			    driver.get("https://www.xfinity.com");
 			 //}
