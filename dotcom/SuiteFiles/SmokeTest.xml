@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Dotcom Health" verbose="1">
+	<parameter name="environment" value="QA" />
+	<test name="Service Buy">
+		<classes>
+			
+			<class name="dotcom.runner.Runner" />
+		</classes>
+	</test>
+</suite>

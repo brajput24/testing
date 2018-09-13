@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Dotcom Health]">
+  <parameter name="environment" value="QA"/>
+  <test name="Service Buy">
+    <classes>
+      <class name="dotcom.runner.Runner"/>
+    </classes>
+  </test> <!-- Service Buy -->
+  <test name="Service Buy(failed)">
+    <classes>
+      <class name="dotcom.runner.Runner">
+        <methods>
+          <include name="feature"/>
+          <include name="setUpClass"/>
+          <include name="browserSelection"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- dotcom.runner.Runner -->
+    </classes>
+  </test> <!-- Service Buy(failed) -->
+</suite> <!-- Failed suite [Dotcom Health] -->

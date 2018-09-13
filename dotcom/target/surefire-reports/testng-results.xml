@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Dotcom Health" duration-ms="79207" started-at="2018-09-13T14:30:37Z" finished-at="2018-09-13T14:31:57Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="Runner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:dotcom.runner.Runner@35fb3008]" name="feature" class="dotcom.runner.Runner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Service Buy" duration-ms="79207" started-at="2018-09-13T14:30:37Z" finished-at="2018-09-13T14:31:57Z">
+      <class name="dotcom.runner.Runner">
+        <test-method status="PASS" signature="browserSelection()[pri:0, instance:dotcom.runner.Runner@35fb3008]" name="browserSelection" is-config="true" duration-ms="19904" started-at="2018-09-13T20:00:37Z" finished-at="2018-09-13T20:00:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSelection -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:dotcom.runner.Runner@35fb3008]" name="setUpClass" is-config="true" duration-ms="202" started-at="2018-09-13T20:00:57Z" finished-at="2018-09-13T20:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:dotcom.runner.Runner@35fb3008]" name="feature" duration-ms="58339" started-at="2018-09-13T20:00:58Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-09-13T20:01:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dotcom End2End Test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:dotcom.runner.Runner@35fb3008]" name="tearDownClass" is-config="true" duration-ms="686" started-at="2018-09-13T20:01:56Z" finished-at="2018-09-13T20:01:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- dotcom.runner.Runner -->
+    </test> <!-- Service Buy -->
+  </suite> <!-- Dotcom Health -->
+</testng-results>

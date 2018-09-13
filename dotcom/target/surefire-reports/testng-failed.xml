@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Dotcom Health]">
+  <parameter name="environment" value="QA"/>
+  <test name="Service Buy">
+    <classes>
+      <class name="dotcom.runner.Runner"/>
+    </classes>
+  </test> <!-- Service Buy -->
+</suite> <!-- Failed suite [Dotcom Health] -->
