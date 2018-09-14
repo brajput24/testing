@@ -35,13 +35,14 @@ import org.testng.annotations.Test;
 			 */
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--headless");
-			//chromeOptions.addArguments("--no-sandbox");
+			chromeOptions.addArguments("--no-sandbox");
 			chromeOptions.addArguments("--start-maximized");
 			chromeOptions.addArguments("--ignore-certificate-errors");
 			//chromeOptions.addArguments("--disable-popup-blocking");
 			chromeOptions.addArguments("--incognito");
 			chromeOptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 
+			chromeOptions.setExperimentalOption(“useAutomationExtension”, false);
 			//chromeOptions.setBinary("Drivers//chromedriver.exe");
 			
 		      chromeOptions.setBinary("/usr/local/bin/chromedriver");
