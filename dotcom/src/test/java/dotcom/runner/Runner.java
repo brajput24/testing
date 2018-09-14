@@ -34,14 +34,13 @@ import org.testng.annotations.Test;
 			 } else if(browser.equalsIgnoreCase("chrome")){
 			 */
 			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--headless");
+			//chromeOptions.addArguments("--headless");
 			chromeOptions.addArguments("--no-sandbox");
-			chromeOptions.addArguments("--start-maximized");
-			chromeOptions.addArguments("--ignore-certificate-errors");
+			//chromeOptions.addArguments("--start-maximized");
+			//chromeOptions.addArguments("--ignore-certificate-errors");
 			//chromeOptions.addArguments("--disable-popup-blocking");
-			chromeOptions.addArguments("--incognito");
+			//chromeOptions.addArguments("--incognito");
 			chromeOptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-
 			chromeOptions.setExperimentalOption("useAutomationExtension", false);
 			//chromeOptions.setBinary("Drivers//chromedriver.exe");
 			
