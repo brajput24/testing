@@ -40,6 +40,8 @@ import org.testng.annotations.Test;
 			chromeOptions.addArguments("--ignore-certificate-errors");
 			//chromeOptions.addArguments("--disable-popup-blocking");
 			chromeOptions.addArguments("--incognito");
+			chromeOptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+
 			//chromeOptions.setBinary("Drivers//chromedriver.exe");
 			
 		      chromeOptions.setBinary("/usr/local/bin/chromedriver");
