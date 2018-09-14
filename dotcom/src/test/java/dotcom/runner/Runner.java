@@ -36,7 +36,11 @@ import org.testng.annotations.Test;
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--headless");
 			chromeOptions.addArguments("--no-sandbox");
-
+			chromeOptions.addArguments("--start-maximized");
+			chromeOptions.addArguments("--ignore-certificate-errors");
+			chromeOptions.addArguments("--disable-popup-blocking");
+			chromeOptions.addArguments("--incognito");
+			chromeOptions.setBinary("/usr/local/bin/chromedriver");
 			WebDriver driver = new ChromeDriver(chromeOptions);
 		      System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
 			    //driver = new ChromeDriver();
