@@ -40,8 +40,10 @@ import org.testng.annotations.Test;
 			chromeOptions.addArguments("--ignore-certificate-errors");
 			//chromeOptions.addArguments("--disable-popup-blocking");
 			chromeOptions.addArguments("--incognito");
-			chromeOptions.setBinary("Drivers//chromedriver.exe");
-		      System.setProperty("webdriver.chrome.driver","Drivers//chromedriver.exe");
+			//chromeOptions.setBinary("Drivers//chromedriver.exe");
+			
+		      chromeOptions.setBinary("/usr/local/bin/chromedriver/chromedriver");
+		      System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver/chromedriver");
 
 			WebDriver driver = new ChromeDriver(chromeOptions);
 			    //driver = new ChromeDriver();
