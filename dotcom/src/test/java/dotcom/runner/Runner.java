@@ -38,7 +38,7 @@ import org.testng.annotations.Test;
 			chromeOptions.addArguments("--no-sandbox");
 
 			WebDriver driver = new ChromeDriver(chromeOptions);
-		      System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+		      System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			    //driver = new ChromeDriver();
 			    driver.get("https://www.xfinity.com");
 			 //}
