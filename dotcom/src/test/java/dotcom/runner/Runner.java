@@ -42,7 +42,7 @@ import org.testng.annotations.Test;
 			chromeOptions.addArguments("--incognito");
 			chromeOptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 
-			chromeOptions.setExperimentalOption(“useAutomationExtension”, false);
+			chromeOptions.setExperimentalOption("useAutomationExtension", false);
 			//chromeOptions.setBinary("Drivers//chromedriver.exe");
 			
 		      chromeOptions.setBinary("/usr/local/bin/chromedriver");
