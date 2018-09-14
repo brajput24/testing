@@ -42,8 +42,8 @@ import org.testng.annotations.Test;
 			chromeOptions.addArguments("--incognito");
 			//chromeOptions.setBinary("Drivers//chromedriver.exe");
 			
-		      chromeOptions.setBinary("/usr/local/bin/chromedriver/");
-		      System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver/");
+		      chromeOptions.setBinary("/usr/local/bin/chromedriver");
+		      System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
 
 			WebDriver driver = new ChromeDriver(chromeOptions);
 			    //driver = new ChromeDriver();
