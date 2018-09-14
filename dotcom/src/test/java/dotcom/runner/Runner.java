@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -33,8 +33,13 @@ import org.testng.annotations.Test;
 		        
 			 } else if(browser.equalsIgnoreCase("chrome")){
 			 */
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.addArguments("--headless");
+			chromeOptions.addArguments("--no-sandbox");
+
+			WebDriver driver = new ChromeDriver(chromeOptions);
 		      System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-			    driver = new ChromeDriver();
+			    //driver = new ChromeDriver();
 			    driver.get("https://www.xfinity.com");
 			 //}
 			
