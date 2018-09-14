@@ -43,7 +43,7 @@ import org.testng.annotations.Test;
 			//chromeOptions.setBinary("/usr/local/bin/chromedriver");
 
 			WebDriver driver = new ChromeDriver(chromeOptions);
-		      System.setProperty("webdriver.chrome.driver","//Drivers\\chromedriver.exe");
+		      System.setProperty("webdriver.chrome.driver","Drivers//chromedriver.exe");
 			    //driver = new ChromeDriver();
 			    driver.get("https://www.xfinity.com");
 			 //}
