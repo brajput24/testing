@@ -40,10 +40,10 @@ import org.testng.annotations.Test;
 			chromeOptions.addArguments("--ignore-certificate-errors");
 			//chromeOptions.addArguments("--disable-popup-blocking");
 			chromeOptions.addArguments("--incognito");
-			//chromeOptions.setBinary("/usr/local/bin/chromedriver");
+			chromeOptions.setBinary("Drivers//chromedriver.exe");
+		      System.setProperty("webdriver.chrome.driver","Drivers//chromedriver.exe");
 
 			WebDriver driver = new ChromeDriver(chromeOptions);
-		      System.setProperty("webdriver.chrome.driver","Drivers//chromedriver.exe");
 			    //driver = new ChromeDriver();
 			    driver.get("https://www.xfinity.com");
 			 //}
