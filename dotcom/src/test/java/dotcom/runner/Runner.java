@@ -35,7 +35,7 @@ import org.testng.annotations.Test;
 			 */
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--headless");
-			chromeOptions.addArguments("--no-sandbox");
+			//chromeOptions.addArguments("--no-sandbox");
 			chromeOptions.addArguments("--start-maximized");
 			chromeOptions.addArguments("--ignore-certificate-errors");
 			chromeOptions.addArguments("--disable-popup-blocking");
